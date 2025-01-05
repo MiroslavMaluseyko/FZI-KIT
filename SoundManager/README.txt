@@ -1,0 +1,1 @@
+Add new sound types by editing SoundEnum.

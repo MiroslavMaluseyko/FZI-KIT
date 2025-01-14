@@ -41,6 +41,10 @@ namespace FZI.SoundManger
                 _sounds[i].name = names[i];
             }
         }
+        private void OnApplicationQuit()
+        {
+            SaveSettings();
+        }
 
         public static SoundManager GetInstance()
         {
@@ -114,6 +118,7 @@ namespace FZI.SoundManger
         {
             PlayerPrefs.SetString("SoundSettings", JsonUtility.ToJson(GetInstance()._settings));
         }
+        
         
     }
    

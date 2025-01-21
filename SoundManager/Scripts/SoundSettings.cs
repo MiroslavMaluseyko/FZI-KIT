@@ -7,5 +7,6 @@
         public float SfxVolume = .5f;
         public bool MusicMuted = false;
         public bool SfxMuted = false;
+        public float AmbientsVolume = 1f;
     }
 }

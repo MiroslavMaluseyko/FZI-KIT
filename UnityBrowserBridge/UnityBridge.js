@@ -1,6 +1,6 @@
 class UnityBridge {
     constructor() {
-        this.gameAspectRatio = 16 / 9;
+        this.gameAspectRatio = -1;
         this.unityGame = null;
     }
 
@@ -9,7 +9,6 @@ class UnityBridge {
         console.log("Unity instance initialized:", this.unityGame);
 
         this.init_visibility_changed();
-        this.init_aspect_ratio_change();
     }
 
     // Visibility
@@ -30,6 +29,7 @@ class UnityBridge {
     }
 
     set_aspect_ratio(aspectRatio) {
+        if(this.gameAspectRatio == -1)this.init_aspect_ratio_change();
         this.gameAspectRatio = aspectRatio;
         this.resizeGame();
     }

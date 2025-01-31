@@ -2,7 +2,7 @@ using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-namespace UnityBrowserBridge
+namespace FZI.UnityBrowserBridge
 {
     public class UnityBrowserBridge : MonoBehaviour
     {

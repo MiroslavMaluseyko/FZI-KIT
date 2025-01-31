@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Core.Scripts.Extensions
+namespace FZI.Extensions
 {
     public static class VectorExtensions
     {
@@ -13,5 +13,8 @@ namespace Core.Scripts.Extensions
                    vec.x * Mathf.Sin(angleRad) + vec.y * Mathf.Cos(angleRad));
             return newVec;
         }
+        
+        public static Vector2 ToVectorXY(this Vector3 vec) => new Vector2(vec.x, vec.y);
+        public static Vector2 ToVectorXZ(this Vector3 vec) => new Vector2(vec.x, vec.z);
     }
 }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Core.Scripts
+namespace FZI.Extensions
 {
 public static class ScrollRectExtensions
 {
